@@ -44,8 +44,8 @@
       <file leaf-file-name="addNoteToDb.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addNoteToDb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="351">
+              <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
               <folding>
                 <marker date="1483905192378" expanded="true" signature="947:1055" ph="INSERT INTO notes... " />
                 <marker date="1483905192378" expanded="true" signature="1126:1173" ph="SELECT NoteI... notes" />
@@ -627,12 +627,12 @@
       <workItem from="1483646276631" duration="265000" />
       <workItem from="1483647927875" duration="5000" />
       <workItem from="1483811928762" duration="17258000" />
-      <workItem from="1483904840103" duration="632000" />
+      <workItem from="1483904840103" duration="898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126877000" />
+    <option name="totallyTimeSpent" value="127143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
@@ -1103,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addNoteToDb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
           <folding>
             <marker date="1483905192378" expanded="true" signature="947:1055" ph="INSERT INTO notes... " />
             <marker date="1483905192378" expanded="true" signature="1126:1173" ph="SELECT NoteI... notes" />
