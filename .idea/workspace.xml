@@ -164,7 +164,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="vcs.TFS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -580,6 +580,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Boberkowy\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="53010c25-73c7-4864-b2ef-6d9bcd355102" name="Default" comment="" />
@@ -599,12 +602,12 @@
       <workItem from="1483646276631" duration="265000" />
       <workItem from="1483647927875" duration="5000" />
       <workItem from="1483811928762" duration="17258000" />
-      <workItem from="1483904840103" duration="6331000" />
+      <workItem from="1483904840103" duration="7110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132576000" />
+    <option name="totallyTimeSpent" value="133355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1041" extended-state="0" />
