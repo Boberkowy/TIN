@@ -42,7 +42,7 @@ if($_SESSION['role'] != 'admin'){
         </ul>
     </div>
 
-    <div id = "content">
+    <div id = "AdminContent">
         <?php
         $userID = $_GET['id'];
         $query = "SELECT * FROM users WHERE userID= '$userID'";

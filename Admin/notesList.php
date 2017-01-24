@@ -42,7 +42,7 @@ if($_SESSION['role'] !='admin'){
         </ul>
     </div>
 
-    <div id = "content">
+    <div id = "AdminContent">
         <?php
         selectNotes();
         ?>

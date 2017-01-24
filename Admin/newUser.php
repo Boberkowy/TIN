@@ -41,14 +41,15 @@ if($_SESSION['role'] !='admin'){
         </ul>
     </div>
 
-    <div id = "content">
+    <div id = "AdminContent">
         <div id="addNewUserForm">
             <button class="cancelButton">X</button>
-            <form action ="../register.php" method="POST" id="formularzyk" >
+            <form action ="../register.php" method="POST" >
                 <h1>Nowy użytkownik</h1>
                 <input type="text" name="login" placeholder="Login" ><br/>
                 <input type="password" name="password" placeholder="Hasło" ><br/>
                 <input type ="email" name="email" placeholder="Email"  ><br/>
+
                 <input type="submit" value="Rejestruj" ><br/>
             </form>
         </div>

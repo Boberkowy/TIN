@@ -27,32 +27,34 @@ if(!isset($_SESSION['login'])){
         </div>
     </div>
 
-    <div id="nav_vertical">
+
         <?PHP
-        if($_SESSION['role'] == 'admin'){ ?>
-        <p class= "category">Użytkownicy</p>
-        <ul>
-            <li><a href="Admin/newUser.php">Dodaj użytkownika</a></li>
-            <li><a href="Admin/usersList.php">Lista użytkowników</a></li>
-        </ul>
-        <p class="category">Notatki</p>
-        <ul>
-            <li><a href="Admin/notesList.php">Lista notatek</a></li>
-            <li><a href="Admin/adminNotes.php">Twoje notatki</a></li>
-        </ul>
-        <?php }?>
+        if($_SESSION['role'] == 'admin'){
+        echo "<div id='nav_vertical'>";
+        echo "<p class='category'>Użytkownicy</p>";
+        echo "<ul>";
+        echo "<li><a href='Admin/newUser.php'>Dodaj użytkownika</a></li>";
+        echo "<li><a href='Admin/usersList.php'>Lista użytkowników</a></li>";
+        echo "</ul>";
+        echo "<p class='category'>Notatki</p>";
+        echo "<ul>";
+        echo "<li><a href='Admin/notesList.php'>Lista notatek</a></li>";
+        echo "<li><a href='Admin/adminNotes.php'>Twoje notatki</a></li>";
+        echo "</ul>";
+        echo "</div>";
+        }?>
 
 
-    </div>
-
-    <div id = "content">
+    <div id = "AdminContent">
         <?php
 
         $noteID = $_GET['id'];
         $query = "SELECT * FROM notes WHERE NoteID = '$noteID'";
         $result = mysqli_query($db, $query);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        ?> <div id="addNote">
+        ?>
+
+         <div id='addNote'>
             <form action="editNoteToDb.php" method="POST" id="addNoteForm" enctype="multipart/form-data">
                 <h1>EDYTUJ NOTKĘ</h1>
                 <input type="hidden" name="NoteID" id="noteID" value="<?php echo $row['NoteID']?>">

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'db.php';
-$noteId = mysqli_real_escape_string($db,$_GET['id']);
+$noteId = $_GET['id'];
 
 if(isset($_GET['id'])){
     $query = "DELETE FROM  notes WHERE `NoteID` = '$noteId'";

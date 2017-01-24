@@ -8,6 +8,8 @@
     <script type="application/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script type="application/javascript" src="js/popup.js"></script>
     <script type="application/javascript" src="js/confirmDelete.js"></script>
+    <script type="application/javascript" src="js/ajax.js"></script>
+    <script type="application/javascript" src="js/countdivs.js"></script>
 
 </head>
 <?php
@@ -27,15 +29,18 @@ if($_SESSION['role'] == 'admin')
             <span class="btn btn-default"><a href="logout.php">WYLOGUJ</a></span>
         </div>
     </div>
-    <div id="nav_vertical">
-        TODO NAV VERTICAL
-        // LISTA ARCHIWALNYCH WPISÓW
-    </div>
+
     <div id = "content">
+        <div id="notes">
         <?php
         selectNotes();
 ?>
-    </div>
+
+
+        </div>
+        <input type="hidden" id="howManyResults" value="5">
+        <input type="button" id="load" value="Załaduj więcej">
+        </div>
 
     <footer>
         <p> Strona stworzona przez Mateusza Owerczuk na projekt zaliczeniowy z przedmiotu TIN.</p>

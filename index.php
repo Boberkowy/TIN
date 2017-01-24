@@ -12,6 +12,11 @@
 
 </head>
 <body>
+<noscript>
+    <div id = "jsOff">
+        Nie masz włączonego JavaScriptu. Bez niego nie jesteś w stanie korzystać z serwisu.
+    </div>
+</noscript>
 <?php
 session_start();
 
@@ -47,12 +52,6 @@ if(isset($_SESSION['login'])){
                 <span class="btn btn-default" id="registerButton">Zarejestruj</span>
             </div>
             </div>
-
-
-        <div id="nav_vertical">
-            TODO NAV VERTICAL
-            // LISTA ARCHIWALNYCH WPISÓW
-        </div>
 
         <div id = "content">
             <?php

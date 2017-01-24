@@ -41,7 +41,7 @@ if($_SESSION['role'] !='admin'){
         </ul>
     </div>
 
-    <div id = "content">
+    <div id = "AdminContent">
        <h1>Witaj w panelu administracyjnym</h1>
         <p>Tutaj możesz przeglądać użytkowników, notatki oraz zarządzać nimi. CRUD w pełni.</p>
     </div>

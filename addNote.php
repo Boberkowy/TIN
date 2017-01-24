@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Blog Technologie Internetu</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -26,24 +27,38 @@ if(!isset($_SESSION['login'])){
             <span class="btn btn-default"><a href="logout.php">WYLOGUJ</a></span>
         </div>
     </div>
+    <?php
+        if($_SESSION['role'] == "admin"){
+        echo" <div id='nav_vertical'> 
+              <p class= 'category'>Użytkownicy</p> 
+              <ul> 
+              <li><a href='newUser.php'>Dodaj użytkownika</a></li>
+              <li><a href='usersList.php'>Lista użytkowników</a></li> 
+              </ul> 
+              <p class='category'>Notatki</p> 
+              <ul> 
+              <li><a href='notesList.php'>Lista notatek</a></li> 
+              <li><a href='adminNotes.php'>Twoje notatki</a></li>
+              </ul>
+               </div>
+               <div id='AdminContent'>
+               ";}else
 
-    <div id="nav_vertical">
-    TODO NAV VERTICAL
-// LISTA ARCHIWALNYCH WPISÓW
-</div>
 
-    <div id = "content">
+    echo "<div id = 'content'>";
+          ?>
         <?php
-            if(isset($_SESSION['sizeError']) || isset($_SESSION['formatError']))
+            if(isset($_SESSION['formatError'])) {
                 echo "<div id='error'><h1>" . $_SESSION['formatError'] . "</h1></div>";
-                echo "<div id='error'><h1>" . $_SESSION['sizeError'] . "</h1></div>";
-        ?>
+            } if(isset($_SESSION['sizeError'])){
+                echo "<div id='error'><h1>" . $_SESSION['sizeError'] . "</h1></div>";}
+            ?>
         <div id="addNote">
           <form action="addNoteToDb.php" method="POST" id="addNoteForm" enctype="multipart/form-data">
               <h1>DODAJ NOTKĘ</h1>
-              <input  type="text" name="titleInput" id = "titleInput" placeholder="Tytuł wpisu" required><br/>
-              <textarea name="noteContentInput" id = "noteContentInput" placeholder="Zawartość wpisu" required></textarea><br/>
-              <input  type="file" name ="photo" id="photoInput" class="formularzyk" maxlength="1000000" multiple><br/>
+              <input  type="text" name="titleInput" id = "titleInput" placeholder="Tytuł wpisu" ><br/>
+              <textarea name="noteContentInput" id = "noteContentInput" placeholder="Zawartość wpisu" ></textarea><br/>
+              <input  type="file" name="photo" id="photoInput"><br/>
               <button title="backBtn" onclick="history.go(-1);">Wstecz </button>
               <input  type="submit" name="submitBtn"  value="Dodaj wpis"><br/>
           </form>
@@ -51,10 +66,9 @@ if(!isset($_SESSION['login'])){
     </div>
 
 
-</div>
+
 <footer>
     <p> Strona stworzona przez Mateusza Owerczuk na projekt zaliczeniowy z przedmiotu TIN.</p>
 </footer>
-
 </body>
 </html>

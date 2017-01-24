@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<head>
-    <title>Blog Technologie Internetu</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
-    <script type="text/javascript" src ="../js/jquery-3.1.1.js"></script>
-    <script type="application/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
-    <script type="application/javascript" src="../js/popup.js"></script>
-    <script type="application/javascript" src="../js/confirmDelete.js"></script>
+    <!DOCTYPE html>
+    <head>
+        <title>Blog Technologie Internetu</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+        <script type="text/javascript" src ="../js/jquery-3.1.1.js"></script>
+        <script type="application/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+        <script type="application/javascript" src="../js/popup.js"></script>
+        <script type="application/javascript" src="../js/confirmDelete.js"></script>
 
-</head>
+    </head>
 <?php
 include "selectUsers.php";
 session_start();
@@ -40,7 +40,7 @@ if($_SESSION['role'] !='admin'){
         </ul>
     </div>
 
-    <div id = "content">
+    <div id = "AdminContent">
         <?php
             selectUsers();
         ?>
